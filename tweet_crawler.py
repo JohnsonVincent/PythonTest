@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # -*- coding:utf-8 -*-
 
+import twitter
 from requests_oauthlib import OAuth1Session
 import json
 
@@ -15,13 +16,13 @@ oath_key_dict = {
 ### Functions
 def main():
     tweets = tweet_search("#python", oath_key_dict)
-    print "***"
 
     for tweet in tweets["statuses"]:
       tweet_id = tweet[u'id_str']
       text = tweet[u'text']
       created_at = tweet[u'created_at']
       user_id = tweet[u'user'][u'id_str']
+
     user_description = tweet[u'user'][u'description']
     screen_name = tweet[u'user'][u'screen_name']
     user_name = tweet[u'user'][u'name']
@@ -34,7 +35,6 @@ def main():
     print "user_name:", user_name
     return
 
-
 def create_oath_session(oath_key_dict):
     oath = OAuth1Session(
     oath_key_dict["consumer_key"],
@@ -46,7 +46,6 @@ def create_oath_session(oath_key_dict):
 
 def tweet_search(search_word, oath_key_dict):
     url = "https://api.twitter.com/1.1/search/tweets.json?"
-    print "***1"
     params = {
         "q": unicode(search_word),
         "lang": "ja",

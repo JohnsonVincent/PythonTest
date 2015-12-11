@@ -1,0 +1,37 @@
+eventid,mediatypeid,alerttype,alertid,clock,error,userid,retries,status,actionid,sendto,message,esc_step,subject
+24,4,0,8,1449131845,/usr/lib/zabbix/alertscripts//var/lib/zabbix/sendmessage-smtp-php/sendmessage_smtp_php.sh: [2] No such file or directory,1,3,2,8,nagamine.fumiaki@brains-consulting.co.jp,"Trigger: HTTP service is down on Wordpress-Server
+Trigger status: PROBLEM
+Trigger severity: Disaster
+Trigger URL: 
+
+Item values:
+
+1. HTTP service is running (Wordpress-Server:net.tcp.service[http]): Down (0)
+2. *UNKNOWN* (*UNKNOWN*:*UNKNOWN*): *UNKNOWN*
+3. *UNKNOWN* (*UNKNOWN*:*UNKNOWN*): *UNKNOWN*
+
+Original event ID: 24",1,PROBLEM: HTTP service is down on Wordpress-Server
+26,4,0,9,1449144087,/usr/lib/zabbix/alertscripts/sendmessage-smtp-php/sendmessage_smtp_php.sh: [2] No such file or directory,1,3,2,8,nagamine.fumiaki@brains-consulting.co.jp,"Trigger: HTTP service is down on Wordpress-Server
+Trigger status: PROBLEM
+Trigger severity: Disaster
+Trigger URL: 
+
+Item values:
+
+1. HTTP service is running (Wordpress-Server:net.tcp.service[http]): Down (0)
+2. *UNKNOWN* (*UNKNOWN*:*UNKNOWN*): *UNKNOWN*
+3. *UNKNOWN* (*UNKNOWN*:*UNKNOWN*): *UNKNOWN*
+
+Original event ID: 26",1,PROBLEM: HTTP service is down on Wordpress-Server
+28,4,0,10,1449193464,,1,0,1,8,nagamine.fumiaki@brains-consulting.co.jp,"Trigger: HTTP service is down on Wordpress-Server
+Trigger status: PROBLEM
+Trigger severity: Disaster
+Trigger URL: 
+
+Item values:
+
+1. HTTP service is running (Wordpress-Server:net.tcp.service[http]): Down (0)
+2. *UNKNOWN* (*UNKNOWN*:*UNKNOWN*): *UNKNOWN*
+3. *UNKNOWN* (*UNKNOWN*:*UNKNOWN*): *UNKNOWN*
+
+Original event ID: 28",1,PROBLEM: HTTP service is down on Wordpress-Server
